@@ -1,0 +1,37 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Oct 19 13:51:39 2025
+| Host         : MIZE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Oct 19 13:51:16 2025
+| Host         : MIZE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 2)) to Vivado generation flows.
+

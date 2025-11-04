@@ -1,0 +1,1403 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  4 22:04:42 2025
+# Process ID: 3496
+# Current directory: C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2
+# Command line: vivado.exe -log audio_lookback.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_lookback.tcl
+# Log file: C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2/audio_lookback.vds
+# Journal file: C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source audio_lookback.tcl -notrace
+Command: synth_design -top audio_lookback -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28256 
+WARNING: [Synth 8-2507] parameter declaration becomes local in echo_cancellation with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_cancellation.v:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in echo_cancellation with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_cancellation.v:18]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_effect.v:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_rx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_rx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_rx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:18]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_rx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:19]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_tx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_tx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:18]
+WARNING: [Synth 8-2507] parameter declaration becomes local in i2s_tx with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:19]
+WARNING: [Synth 8-2507] parameter declaration becomes local in advanced_noise_reduction with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:15]
+WARNING: [Synth 8-2507] parameter declaration becomes local in advanced_noise_reduction with formal parameter declaration list [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:16]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 479.148 ; gain = 111.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'audio_lookback' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/top/audio_lookback.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2/.Xil/Vivado-3496-MIZE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2/.Xil/Vivado-3496-MIZE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_div4' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/clk_div4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div4' (2#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/clk_div4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'es8388_Init' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_Init.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Init_Dev' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/I2C_Init_Dev.v:16]
+INFO: [Synth 8-6157] synthesizing module 'es8388_init_table' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:16]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+WARNING: [Synth 8-3848] Net rom[255] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[254] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[253] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[252] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[251] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[250] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[249] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[248] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[247] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[246] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[245] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[244] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[243] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[242] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[241] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[240] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[239] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[238] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[237] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[236] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[235] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[234] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[233] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[232] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[231] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[230] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[229] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[228] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[227] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[226] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[225] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[224] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[223] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[222] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[221] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[220] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[219] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[218] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[217] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[216] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[215] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[214] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[213] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[212] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[211] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[210] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[209] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[208] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[207] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[206] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[205] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[204] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[203] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[202] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[201] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[200] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[199] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[198] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[197] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[196] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[195] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[194] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[193] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[192] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[191] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[190] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[189] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[188] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[187] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[186] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[185] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[184] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[183] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[182] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[181] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[180] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[179] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[178] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[177] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[176] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[175] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[174] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[173] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[172] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[171] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[170] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[169] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[168] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[167] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[166] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[165] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[164] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[163] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[162] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[161] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[160] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[159] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[158] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[157] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+WARNING: [Synth 8-3848] Net rom[156] in module/entity es8388_init_table does not have driver. [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:26]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'es8388_init_table' (3#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_init_table.v:16]
+INFO: [Synth 8-6157] synthesizing module 'i2c_control' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:16]
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter WR_REG bound to: 8'b00000010 
+	Parameter WAIT_WR_DONE bound to: 8'b00000100 
+	Parameter WR_REG_DONE bound to: 8'b00001000 
+	Parameter RD_REG bound to: 8'b00010000 
+	Parameter WAIT_RD_DONE bound to: 8'b00100000 
+	Parameter RD_REG_DONE bound to: 8'b01000000 
+	Parameter WAIT_DLY bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'i2c_bit_shift' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_bit_shift.v:16]
+	Parameter SYS_CLOCK bound to: 50000000 - type: integer 
+	Parameter SCL_CLOCK bound to: 400000 - type: integer 
+	Parameter SCL_CNT_M bound to: 30 - type: integer 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter GEN_STA bound to: 8'b00000010 
+	Parameter WR_DATA bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00001000 
+	Parameter CHECK_ACK bound to: 8'b00010000 
+	Parameter GEN_ACK bound to: 8'b00100000 
+	Parameter GEN_STO bound to: 8'b01000000 
+INFO: [Synth 8-226] default block is never used [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_bit_shift.v:155]
+INFO: [Synth 8-226] default block is never used [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_bit_shift.v:216]
+WARNING: [Synth 8-5788] Register i2c_sclk_reg in module i2c_bit_shift is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_bit_shift.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_bit_shift' (4#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_bit_shift.v:16]
+WARNING: [Synth 8-151] case item 8'b10000000 is unreachable [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:289]
+WARNING: [Synth 8-6014] Unused sequential element dly_cnt_reg was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:106]
+WARNING: [Synth 8-5788] Register cnt_reg in module i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:112]
+WARNING: [Synth 8-5788] Register RW_Done_reg in module i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_control' (5#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/i2c_control.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Init_Dev' (6#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/I2C_Init_Dev.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'es8388_Init' (7#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/es8388_Init/es8388_Init.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_byte_rx' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/uart_byte_rx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart_byte_rx' (8#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/uart_byte_rx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'echo_cancellation' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_cancellation.v:2]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter threshold_high bound to: 16'sb0111111111111111 
+	Parameter threshold_low bound to: 16'sb1000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'echo_fifo' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_fifo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'async_fifo' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter FULL_AHEAD bound to: 1 - type: integer 
+	Parameter SHOWAHEAD_EN bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'async_fifo_ctrl' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo_ctrl.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter FULL_AHEAD bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo_ctrl' (9#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/dpram.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/dpram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dpram' (10#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/dpram.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rddata_tmp_latch_reg was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo' (11#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo.v:1]
+WARNING: [Synth 8-689] width (15) of port connection 'wrusedw' does not match port width (16) of module 'async_fifo' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_fifo.v:28]
+WARNING: [Synth 8-350] instance 'fifo_inst' of module 'async_fifo' requires 12 connections, but only 11 given [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_fifo.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'echo_fifo' (12#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_fifo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'simple_multi_16x16' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'simple_multi_16x16' (13#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'echo_cancellation' (14#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_cancellation.v:2]
+INFO: [Synth 8-6157] synthesizing module 'advanced_noise_reduction' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter NOISE_FLOOR bound to: 16'b0000001100100000 
+	Parameter ATTENUATION_FACTOR bound to: 16'b0000000000000100 
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[0] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[1] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[2] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[3] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[4] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[5] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[6] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[7] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[8] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[9] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[10] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[11] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[12] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[13] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[14] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[15] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[16] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[17] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[18] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[19] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[20] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[21] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[22] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[23] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[24] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[25] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[26] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[27] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[28] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[29] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[30] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[31] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[32] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[33] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[34] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[35] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[36] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[37] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[38] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[39] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[40] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[41] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[42] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[43] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[44] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[45] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[46] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[47] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[48] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[49] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[50] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[51] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[52] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[53] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[54] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[55] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[56] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[57] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[58] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[59] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[60] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[61] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+WARNING: [Synth 8-6014] Unused sequential element energy_buffer_reg[62] was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_noise_reduction' (15#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/noise_reduction.v:1]
+INFO: [Synth 8-6157] synthesizing module 'simple_echo_effect' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_effect.v:5]
+	Parameter ECHO_GAIN bound to: 16'b0010000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'simple_echo_effect' (16#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/echo_effect.v:5]
+INFO: [Synth 8-6157] synthesizing module 'volume_control' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:6]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element temp_left_reg was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:203]
+WARNING: [Synth 8-6014] Unused sequential element temp_right_reg was removed.  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:252]
+INFO: [Synth 8-6155] done synthesizing module 'volume_control' (17#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:6]
+INFO: [Synth 8-6157] synthesizing module 'i2s_rx' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter state_idle bound to: 2'b00 
+	Parameter state_left_data bound to: 2'b01 
+	Parameter state_right_data bound to: 2'b10 
+	Parameter state_fifo_write bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:63]
+INFO: [Synth 8-6157] synthesizing module 'async_fifo__parameterized0' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter FULL_AHEAD bound to: 1 - type: integer 
+	Parameter SHOWAHEAD_EN bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'async_fifo_ctrl__parameterized0' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo_ctrl.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter FULL_AHEAD bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo_ctrl__parameterized0' (17#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram__parameterized0' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/dpram.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dpram__parameterized0' (17#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/dpram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo__parameterized0' (17#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/fifo/async_fifo.v:1]
+WARNING: [Synth 8-5788] Register reg_wrfifo_data_reg in module i2s_rx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'i2s_rx' (18#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i2s_tx' [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter state_idle bound to: 2'b00 
+	Parameter state_tx_left_data bound to: 2'b01 
+	Parameter state_tx_right_data bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'i2s_tx' (19#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/i2s/i2s_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'audio_lookback' (20#1) [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/src/top/audio_lookback.v:1]
+WARNING: [Synth 8-3331] design simple_echo_effect has unconnected port clk
+WARNING: [Synth 8-3331] design advanced_noise_reduction has unconnected port sck
+WARNING: [Synth 8-3331] design echo_cancellation has unconnected port clk
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[31]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[30]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[29]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[28]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[27]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[26]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[25]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[24]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[23]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[22]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[21]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[20]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[19]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[18]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[17]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[16]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[15]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[14]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[13]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[12]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[11]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[10]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[9]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[8]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[7]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[6]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[5]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[4]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[3]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[2]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[1]
+WARNING: [Synth 8-3331] design i2c_control has unconnected port dly_cnt_max[0]
+WARNING: [Synth 8-3331] design audio_lookback has unconnected port button_s1
+WARNING: [Synth 8-3331] design audio_lookback has unconnected port button_s2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 670.363 ; gain = 303.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 670.363 ; gain = 303.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 670.363 ; gain = 303.086
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [c:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/constrs_1/new/io.xdc]
+Finished Parsing XDC File [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/constrs_1/new/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/audio_lookback_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/audio_lookback_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1072.312 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1072.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1072.312 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1072.312 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_bit_shift'
+INFO: [Synth 8-5546] ROM "Rx_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Trans_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ack_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_div_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_control'
+INFO: [Synth 8-5546] ROM "Cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Tx_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RW_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rddata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'I2C_Init_Dev'
+INFO: [Synth 8-5546] ROM "i2c_dly_cnt_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "i2c_dly_cnt_max" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrreg_req" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Init_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bps_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Rx_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "START_BIT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "STOP_BIT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data_buffer_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "energy_buffer_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_energy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_buffer_left_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:61]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:198]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/volume_adjust.v:247]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2s_rx'
+INFO: [Synth 8-5544] ROM "adcfifo_writedata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adcfifo_write" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2s_tx'
+INFO: [Synth 8-5544] ROM "dacdat" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                 GEN_STA |                         00000010 |                         00000010
+                 WR_DATA |                         00000100 |                         00000100
+               CHECK_ACK |                         00010000 |                         00010000
+                 RD_DATA |                         00001000 |                         00001000
+                 GEN_ACK |                         00100000 |                         00100000
+                 GEN_STO |                         01000000 |                         01000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'i2c_bit_shift'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                          0000001 |                          0000001
+                  WR_REG |                          0000010 |                          0000010
+            WAIT_WR_DONE |                          0000100 |                          0000100
+             WR_REG_DONE |                          0001000 |                          0001000
+                  RD_REG |                          0010000 |                          0010000
+            WAIT_RD_DONE |                          0100000 |                          0100000
+             RD_REG_DONE |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'i2c_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE1 |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'I2C_Init_Dev'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              state_idle |                               00 |                               00
+         state_left_data |                               01 |                               01
+        state_right_data |                               10 |                               10
+        state_fifo_write |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2s_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              state_idle |                              001 |                               00
+      state_tx_left_data |                              010 |                               01
+     state_tx_right_data |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2s_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |simple_echo_effect__GB0 |           1|     31376|
+|2     |simple_echo_effect__GB1 |           1|      7872|
+|3     |simple_echo_effect__GB2 |           1|     30358|
+|4     |simple_echo_effect__GB3 |           1|     18846|
+|5     |simple_echo_effect__GB4 |           1|     24992|
+|6     |audio_lookback__GC0     |           1|     19169|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 6     
+	   4 Input     32 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 2     
+	   4 Input     19 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 5     
+	   3 Input     16 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 8     
+	   3 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 12    
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      9 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 62    
++---Registers : 
+	               32 Bit    Registers := 9     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               16 Bit    Registers := 2088  
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 16    
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 72    
++---RAMs : 
+	             512K Bit         RAMs := 1     
+	               8K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 41    
+	   4 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1095  
+	   4 Input      1 Bit        Muxes := 21    
+	   8 Input      1 Bit        Muxes := 24    
+	   6 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 8     
+	  12 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module audio_lookback 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module simple_echo_effect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2050  
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1024  
+Module clk_div4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module es8388_init_table 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module i2c_bit_shift 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 13    
+Module i2c_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 11    
+Module I2C_Init_Dev 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 3     
+Module es8388_Init 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_byte_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 10    
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 4     
+Module async_fifo_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 3     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 30    
++---Registers : 
+	               16 Bit    Registers := 6     
+	                1 Bit    Registers := 4     
+Module dpram 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	             512K Bit         RAMs := 1     
+Module simple_multi_16x16 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+Module echo_cancellation 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+Module advanced_noise_reduction__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module advanced_noise_reduction 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module volume_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 6     
+	   4 Input     32 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 16    
+	   7 Input     16 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module async_fifo_ctrl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 3     
++---XORs : 
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	                9 Bit    Registers := 8     
+	                1 Bit    Registers := 4     
+Module dpram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module async_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module i2s_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+Module async_fifo_ctrl__parameterized0__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 3     
++---XORs : 
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	                9 Bit    Registers := 8     
+	                1 Bit    Registers := 4     
+Module dpram__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module async_fifo__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module i2s_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design audio_lookback has unconnected port button_s1
+WARNING: [Synth 8-3331] design audio_lookback has unconnected port button_s2
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP simple_multi_16x16/p0, operation Mode is: A*B.
+DSP Report: operator simple_multi_16x16/p0 is absorbed into DSP simple_multi_16x16/p0.
+INFO: [Synth 8-5544] ROM "data_buffer_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_buffer_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_div4/clk_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3331] design advanced_noise_reduction has unconnected port sck
+WARNING: [Synth 8-3331] design advanced_noise_reduction__1 has unconnected port sck
+WARNING: [Synth 8-3331] design echo_cancellation has unconnected port clk
+INFO: [Synth 8-4652] Swapped enable and write-enable on 16 RAM instances of RAM echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[0]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[1]' (FDC) to 'uart_rx_inst/bps_DR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[2]' (FDP) to 'uart_rx_inst/bps_DR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[3]' (FDC) to 'uart_rx_inst/bps_DR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[5]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[6]' (FDP) to 'uart_rx_inst/bps_DR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[7]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[9]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[10]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[11]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[12]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[13]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_rx_inst/bps_DR_reg[14]' (FDC) to 'uart_rx_inst/bps_DR_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_rx_inst/\bps_DR_reg[15] )
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[0]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[1]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[2]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[3]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[4]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[5]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[6]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[7]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[8]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[9]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[10]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[11]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[12]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[13]' (FDCE) to 'echo_cancellation_inst/simple_multi_16x16/b_reg_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (echo_cancellation_inst/\simple_multi_16x16/b_reg_reg[15] )
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/es8388_init_table/q_reg[15]' (FD) to 'es8388_Init/I2C_Init_Dev/es8388_init_table/q_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (es8388_Init/\I2C_Init_Dev/es8388_init_table/q_reg[14] )
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[7]' (FDE) to 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[6]' (FDE) to 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[5]' (FDE) to 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[4]' (FDE) to 'es8388_Init/I2C_Init_Dev/i2c_control/cnt_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (es8388_Init/\I2C_Init_Dev/i2c_control/cnt_reg[3] )
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/Cmd_reg[2]' (FDCE) to 'es8388_Init/I2C_Init_Dev/i2c_control/Cmd_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (es8388_Init/\I2C_Init_Dev/i2c_control/Cmd_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (es8388_Init/\I2C_Init_Dev/i2c_control/i2c_bit_shift/state_reg[7] )
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[19]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[18]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[17]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[15]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[16]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[10]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[11]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[12]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[13]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[14]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[8]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[9]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[7]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[5]' (FDC) to 'es8388_Init/I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (es8388_Init/\I2C_Init_Dev/i2c_control/i2c_bit_shift/div_cnt_reg[6] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                 | use_bram.ram_reg | 32 K x 16(NO_CHANGE)   | W |   | 32 K x 16(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|dpram__parameterized0: | use_bram.ram_reg | 256 x 32(NO_CHANGE)    | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|dpram__parameterized0: | use_bram.ram_reg | 256 x 32(NO_CHANGE)    | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|simple_multi_16x16 | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/i_0/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:14]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:15]
+INFO: [Synth 8-6837] The timing for the instance i_0/i2s_rx_inst/i_0/adc_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/i2s_tx_inst/i_0/dac_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |simple_echo_effect__GB0 |           1|     23873|
+|2     |simple_echo_effect__GB1 |           1|      3937|
+|3     |simple_echo_effect__GB2 |           1|     23390|
+|4     |simple_echo_effect__GB3 |           1|      7823|
+|5     |simple_echo_effect__GB4 |           1|      8226|
+|6     |audio_lookback__GC0     |           1|      6915|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1072.312 ; gain = 705.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                 | use_bram.ram_reg | 32 K x 16(NO_CHANGE)   | W |   | 32 K x 16(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|dpram__parameterized0: | use_bram.ram_reg | 256 x 32(NO_CHANGE)    | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|dpram__parameterized0: | use_bram.ram_reg | 256 x 32(NO_CHANGE)    | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |simple_echo_effect__GB0 |           1|     20889|
+|2     |simple_echo_effect__GB1 |           1|      3445|
+|3     |simple_echo_effect__GB2 |           1|     20484|
+|4     |simple_echo_effect__GB3 |           1|      6896|
+|5     |simple_echo_effect__GB4 |           1|      7346|
+|6     |audio_lookback__GC0     |           1|      6915|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:16]
+INFO: [Synth 8-3886] merging instance 'i_0/i2s_rx_inst/adclrc_r0_reg' (FD) to 'i_0/i2s_tx_inst/daclrc_r0_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/echo_cancellation_inst/simple_multi_16x16/b_reg_reg[14]' (FDCE) to 'i_0/i_2009'
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:14]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:15]
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/i2s_rx_inst/adc_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/i2s_tx_inst/dac_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 1086.707 ; gain = 719.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |simple_echo_effect__GB0 |           1|     13245|
+|2     |simple_echo_effect__GB1 |           1|      3445|
+|3     |simple_echo_effect__GB2 |           1|     12756|
+|4     |simple_echo_effect__GB3 |           1|      6800|
+|5     |simple_echo_effect__GB4 |           1|      7098|
+|6     |audio_lookback__GC0     |           1|      3985|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:14]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.srcs/sources_1/new/simple_multi_16x16.v:15]
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance echo_cancellation_inst/echo_fifo_inst/fifo_inst/dpram_inst/use_bram.ram_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i2s_rx_inst/adc_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i2s_tx_inst/dac_fifo/dpram_inst/use_bram.ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6064] Net \echo_cancellation_inst/echo_fifo_inst/fifo_inst/async_fifo_ctrl_inst/wr_pntr_next0 [0] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     3|
+|3     |CARRY4    |   291|
+|4     |DSP48E1   |     1|
+|5     |LUT1      |   269|
+|6     |LUT2      |   414|
+|7     |LUT3      |   474|
+|8     |LUT4      |   246|
+|9     |LUT5      |  1101|
+|10    |LUT6      |  9214|
+|11    |MUXF7     |  3845|
+|12    |MUXF8     |  1904|
+|13    |RAMB18E1  |     2|
+|14    |RAMB36E1  |    16|
+|15    |FDCE      | 30410|
+|16    |FDPE      |    19|
+|17    |FDRE      |   222|
+|18    |IBUF      |     6|
+|19    |IOBUF     |     1|
+|20    |OBUF      |    11|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------------------+------+
+|      |Instance                     |Module                            |Cells |
++------+-----------------------------+----------------------------------+------+
+|1     |top                          |                                  | 48451|
+|2     |  clk_div4                   |clk_div4                          |     6|
+|3     |  echo_cancellation_inst     |echo_cancellation                 |   430|
+|4     |    echo_fifo_inst           |echo_fifo                         |   254|
+|5     |      fifo_inst              |async_fifo                        |   254|
+|6     |        async_fifo_ctrl_inst |async_fifo_ctrl                   |   238|
+|7     |        dpram_inst           |dpram                             |    16|
+|8     |    simple_multi_16x16       |simple_multi_16x16                |    17|
+|9     |  echo_effect_inst           |simple_echo_effect                | 43745|
+|10    |  es8388_Init                |es8388_Init                       |   254|
+|11    |    I2C_Init_Dev             |I2C_Init_Dev                      |   225|
+|12    |      es8388_init_table      |es8388_init_table                 |    48|
+|13    |      i2c_control            |i2c_control                       |   143|
+|14    |        i2c_bit_shift        |i2c_bit_shift                     |   102|
+|15    |  i2s_rx_inst                |i2s_rx                            |   516|
+|16    |    adc_fifo                 |async_fifo__parameterized0_1      |   371|
+|17    |      async_fifo_ctrl_inst   |async_fifo_ctrl__parameterized0_2 |   136|
+|18    |      dpram_inst             |dpram__parameterized0_3           |     1|
+|19    |  i2s_tx_inst                |i2s_tx                            |   262|
+|20    |    dac_fifo                 |async_fifo__parameterized0        |   169|
+|21    |      async_fifo_ctrl_inst   |async_fifo_ctrl__parameterized0   |   136|
+|22    |      dpram_inst             |dpram__parameterized0             |     1|
+|23    |  noise_reduction_left       |advanced_noise_reduction          |   972|
+|24    |  noise_reduction_right      |advanced_noise_reduction_0        |   972|
+|25    |  uart_rx_inst               |uart_byte_rx                      |   296|
+|26    |  volume_control_inst        |volume_control                    |   799|
++------+-----------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 1108.805 ; gain = 741.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:10 . Memory (MB): peak = 1108.805 ; gain = 339.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 1108.805 ; gain = 741.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6060 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'audio_lookback' is not ideal for floorplanning, since the cellview 'simple_echo_effect' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1108.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+339 Infos, 229 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:23 . Memory (MB): peak = 1108.805 ; gain = 753.035
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1108.805 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave/acx720_audio_loopback_slave.runs/synth_2/audio_lookback.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file audio_lookback_utilization_synth.rpt -pb audio_lookback_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  4 22:06:14 2025...

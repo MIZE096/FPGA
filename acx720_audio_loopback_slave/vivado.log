@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  4 22:17:06 2025
+# Process ID: 1164
+# Current directory: C:/Users/22678/Desktop/acx720_audio_loopback_slave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6540 C:\Users\22678\Desktop\acx720_audio_loopback_slave\acx720_audio_loopback_slave.xpr
+# Log file: C:/Users/22678/Desktop/acx720_audio_loopback_slave/vivado.log
+# Journal file: C:/Users/22678/Desktop/acx720_audio_loopback_slave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/22678/Desktop/acx720_audio_loopback_slave/acx720_audio_loopback_slave.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/22678/Desktop/FUBEN/acx720_audio_loopback_slave' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/AMD/Vivado2018.3/anzhuang/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 858.609 ; gain = 254.496
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  4 22:18:29 2025...
